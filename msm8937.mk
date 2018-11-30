@@ -43,10 +43,6 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# Ambient display
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
@@ -386,6 +382,10 @@ PRODUCT_COPY_FILES += \
 
 # Inherit common proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/msm8937-common/msm8937-common-vendor.mk)
+
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 #Camera Fixes
 PRODUCT_COPY_FILES += \

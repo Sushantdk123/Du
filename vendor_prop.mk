@@ -55,7 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.display.lmax=1280x720 \
     persist.vendor.qti.telephony.vt_cam_interface=1 \
     persist.camera.gyro.android=1 \
-    persist.camera.HAL3.enabled=0 \
+    persist.camera.HAL3.enabled=1 \
     persist.camera.is_type=1 \
     vidc.enc.dcvs.extra-buff-count=2
 
@@ -146,7 +146,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.empty_app_percent=50 \
     ro.vendor.qti.sys.fw.trim_empty_percent=100 \
     ro.vendor.qti.sys.fw.trim_cache_percent=100 \
-    ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
+    ro.vendor.qti.sys.fw.trim_enable_memory=2147483648 \
+    pm.sleep_mode=1
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \

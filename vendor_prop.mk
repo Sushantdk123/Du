@@ -92,6 +92,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.disable_rotator_split=1 \
     vendor.display.disable_skip_validate=1 \
     sdm.perf_hint_window=50
+    vendor.gralloc.enable_fb_ubwc=1 \
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
